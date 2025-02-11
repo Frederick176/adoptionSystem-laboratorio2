@@ -12,8 +12,8 @@ export const createAppointmentValidator = [
 ];
 
 export const updateAppointmentValidator = [
-    param("num", "No es un numero valido").isMongoId(),
-    param("num").custom(appointmentExists),
+    param("id", "No es un numero valido").isMongoId(),
+    param("id").custom(appointmentExists),
     validarCampos,
     handleErrors
 ]

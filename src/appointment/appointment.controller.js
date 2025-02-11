@@ -88,12 +88,12 @@ export const saveAppointment = async (req, res) => {
             const { uid } = req.params;
             const  data  = req.body;
     
-            const user = await Appointment.findByIdAndUpdate(uid, data, { new: true });
+            const appointment = await Appointment.findByIdAndUpdate(uid, data, { new: true });
     
             res.status(200).json({
                 success: true,
                 msg: 'Cita Actualizada',
-                Appointment,
+                appointment,
             });
         } catch (err) {
             res.status(500).json({

@@ -127,3 +127,15 @@ export const updateUser = async (req, res) => {
         });
     }
 }
+
+export const updateProfilePicture = async (req, res) => {
+    try{
+
+    }catch(err){
+        return res.status(500).json({
+            success: false,
+            message: "Error al actualizar la foto",
+            error: err.message
+        })
+    }
+}
