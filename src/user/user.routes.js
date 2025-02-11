@@ -15,6 +15,6 @@ router.patch("/updatePassword/:uid", updatePasswordValidator, updatePassword)
 
 router.put("/updateUser/:uid", updateUserValidator, updateUser)
 
-router.patch("/updateProfilePicture/: uid", uploadProfilePicture.single("profilePicture"), updateProfilePictureValidator, updateProfilePicture)
+router.patch("/updateProfilePicture/:uid", uploadProfilePicture.single("profilePicture"), updateProfilePictureValidator, updateProfilePicture)
 
 export default router
