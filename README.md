@@ -108,3 +108,37 @@ JWT_SECRET=<tu_secreto_jwt>
       "breed": "string"
     }
     ```
+
+    ## Funcionalidades Adicionales
+
+Actualizar Foto del Usuario
+URL: /updateProfilePicture/:uid
+Método: PATCH
+Cuerpo:
+{
+  "success": "true",
+  "message": "Foto actualizada",
+  "user": ""
+}
+
+Listar Citas:
+Listar las citas que hay
+URL: "/"
+Método: GET
+Cuerpo:
+{
+  "success": "true",
+  total: 1,
+  "pet":[]
+}
+
+Actualizar Cita
+Actualizar las citas que quiera el usuario
+URL: "/"
+Método: PATCH
+Cuerpo:
+{
+  "success": "true",
+  total
+  users
+}
