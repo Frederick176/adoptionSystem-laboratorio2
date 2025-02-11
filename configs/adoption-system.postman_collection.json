@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "4d0660a2-1102-48ba-b0f0-a06d694ab130",
-		"name": "API-Vespertina",
+		"_postman_id": "816605c8-ee7c-4300-b5c9-2bd59d382e1e",
+		"name": "adoption-system",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "12536023"
+		"_exporter_id": "37606339"
 	},
 	"item": [
 		{
@@ -19,32 +19,32 @@
 							"formdata": [
 								{
 									"key": "name",
-									"value": "Joséss",
+									"value": "Lizandro",
 									"type": "text"
 								},
 								{
 									"key": "surname",
-									"value": "Balenciagass",
+									"value": "Palermo",
 									"type": "text"
 								},
 								{
 									"key": "username",
-									"value": "jbalenciaga3",
+									"value": "Frederick100",
 									"type": "text"
 								},
 								{
 									"key": "email",
-									"value": "jbalenciaga3@gmail.es",
+									"value": "lpalermo8978@gmail.com",
 									"type": "text"
 								},
 								{
 									"key": "phone",
-									"value": "22160098",
+									"value": "32025678",
 									"type": "text"
 								},
 								{
 									"key": "password",
-									"value": "1234",
+									"value": "Hola_1234",
 									"type": "text"
 								},
 								{
@@ -55,7 +55,7 @@
 								{
 									"key": "profilePicture",
 									"type": "file",
-									"src": "postman-cloud:///1ef4dc1f-9b79-4680-a529-ea114dc8ffeb"
+									"src": "/C:/Users/sandr/OneDrive/Documents/Lizandro/Kinal 2025/Taller 3/Bimestre I/Laboratorio #1/HTML y CSS/assets/img/Dragon Ball.jpg"
 								}
 							]
 						},
@@ -126,7 +126,8 @@
 					"name": "Buscar un usuario por ID",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": ""
 					},
 					"response": []
 				},
@@ -143,7 +144,8 @@
 					"name": "Listar Usuarios",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": ""
 					},
 					"response": []
 				},
@@ -215,7 +217,26 @@
 								}
 							]
 						},
-						"url": "http://127.0.0.1:3001/adoptionSystem/v1/user/updateUser"
+						"url": "http://127.0.0.1:3000/adoptionSystem/v1/user/updateUser"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar foto",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/sandr/OneDrive/Documents/Lizandro/Kinal 2025/Taller 3/Bimestre I/Laboratorio #1/HTML y CSS/assets/img/SPYxFAMILY.jpg"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:3001/adoptionSystem/v1/user/updateProfilePicture/67aaacc186222c0b2eb66776"
 					},
 					"response": []
 				}
@@ -246,7 +267,8 @@
 					"name": "Listar mascotas",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": ""
 					},
 					"response": []
 				},
@@ -313,7 +335,26 @@
 					"name": "Agregar una cita",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"url": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Citas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:3001/adoptionSystem/v1/appointment/"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Citas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "http://127.0.0.1:3001/adoptionSystem/v1/appointment/updateAppointment"
 					},
 					"response": []
 				}
