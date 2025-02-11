@@ -6,7 +6,7 @@ const router = Router();
 
 router.post("/createAppointment", createAppointmentValidator, saveAppointment);
 
-router.post("/", getAppointment)
+router.get("/", getAppointment)
 
 router.put("/updateAppointment", updateAppointmentValidator, updateAppointment)
 
